@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<!--esta es mi practica 65-->
+
+<head>
+    <title>Practica 65</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <h1 id="title">Hola</h1>
+
+    <script>
+        addEventListener('DOMContentLoaded', start, false);
+
+        function start() {
+            document.getElementById('title').addEventListener('mouseover', entry, false);
+            document.getElementById('title').addEventListener('mouseout', exit, false);
+        }
+
+        function entry() {
+            document.getElementById('title').style.color = 'red';
+            document.getElementById('title').style.backgroundColor = 'yellow';
+        }
+
+        function exit() {
+            document.getElementById('title').style.color = 'black';
+            document.getElementById('title').style.backgroundColor = 'white';
+        }
+    </script>
+
+</body>
+
+</html>
